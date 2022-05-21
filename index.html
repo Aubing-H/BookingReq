@@ -10,24 +10,13 @@
 </body>
 
 <script>
+    window.location = 'https://reservation.bupt.edu.cn/index.php/Wechat/Booking/confirm_booking?area_id=5985&td_id=15415_2022052201&query_date=20220522&country_id=0';
 
-    function goGymList(){
-        window.location = "https://reservation.bupt.edu.cn/index.php/Wechat/Booking/choose_template/template/2/area_id/5985/"
-    }
-
-    function func()
-    {
-        //query_date
-        // var dateTime = new Date()
-        // var tomorrow = new Date(dateTime.setDate(dateTime.getDate()+1));
-        // var year = String(tomorrow.getFullYear())
-        // var month = String(tomorrow.getMonth()+1); if(month.length==1){ month='0'+month }
-        // var day = String(tomorrow.getDate()); 
-        
-        window.location = 'https://reservation.bupt.edu.cn/index.php/Wechat/Booking/confirm_booking?area_id=5985&td_id=15415_2022052201&query_date=20220522&country_id=0';
+    function myOnload(){
         this.submitForm(this);
         document.getElementById('form-sub').submit();
     }
+    
     window.onload = func()
 </script>
 
